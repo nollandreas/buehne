@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Theaterverein Bühnenfreunde Hemeln e.V.</title>
+<title>Kontakt - Theaterverein Bühnenfreunde Hemeln e.V.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,18 +10,24 @@
 <style>
 body {font-family: "Montserrat", sans-serif; background-color: #000; color: #fff; background-image: url('./images/vorhang.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh}
 h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-/* Footer and button contrast improvements */
+.spacer {height: 30vh; min-height: 120px}
+.contact-wrapper {max-width:900px; margin:0 auto; padding:24px}
+.contact-card {background: rgba(0,0,0,0.65); padding: 28px; border-radius: 8px; color: #fff}
+.contact-card h2 {margin-top:0}
+.contact-item {margin:12px 0}
+.contact-item strong {display:inline-block; width:110px}
+.contact-link {color: #9fffa6}
 footer {background-color: rgba(0,0,0,0.85); color: #fff}
 footer a {color: #9fffa6}
 .top-row { position: relative; width: 100%; min-height: 60px; }
 .top-menu-button { position: absolute; top: 0; right: 0; z-index: 10;}
 .top-menu-button i {color: #fff}
-/* Spacer above main heading to position it ~30% down the viewport */
-.spacer {height: 30vh; min-height: 120px}
+@media (max-width:600px){.spacer{height:22vh}}
 /* Small footer spacing for adjacent links */
 .footer-link + .footer-link-sep {margin-left:12px}
+.contact-item { display: flex; align-items: flex-start; gap: 12px; margin: 12px 0; }
+.contact-item strong { display: inline-block; width: 190px; flex-shrink: 0; }
+.contact-item span { display: block; flex: 1; text-align: left; }
 /* Sidebar colors */
 #mySidebar {background-color: #c01616 !important;}
 #mySidebar .w3-button { background-color: #c01616 !important; color: #fff !important; }
@@ -32,8 +38,8 @@ footer a {color: #9fffa6}
 </head>
 <body>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px;right:0;left:auto;" id="mySidebar">
+<!-- Sidebar (copied from index.html) -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px;right:0;left:auto" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
@@ -42,53 +48,70 @@ footer a {color: #9fffa6}
   </div>
   <div class="w3-bar-block w3-center">
     <a href="./kontakt.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Kontakt</a>
-  </div>  
+  </div> 
   <div class="w3-bar-block w3-center">
     <a href="./impressum.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Impressum</a>
-  </div>  
+  </div>   
   <div class="w3-bar-block w3-center">
     <a href="./rechtliches.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Rechtliches</a>
-  </div>  
+  </div>   
 </nav>
 
-<!-- !PAGE CONTENT! -->
+<!-- Page content -->
 <div class="w3-content" style="max-width:1500px">
 
-<!-- Header -->
+  <div class="w3-opacity">
+    <span class="w3-button w3-xxlarge w3-black w3-right w3-border top-menu-button" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-clear"></div>
+    <header class="w3-center w3-margin-bottom">
+      <div class="spacer" aria-hidden="true"></div>
+      <h1><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h1>
+      <h2><b>Seit 1964 für Euch auf der Bühne</b></h2>
+    </header>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="contact-card w3-card-4">
+      <h2><b>So erreicht Ihr uns</b></h2>
+      <p class="w3-medium">Wir freuen uns über Eurer Interesse und Eure Fragen rund um unser Vereinsleben.</p>
+
+      <div class="contact-item">
+        <strong>Folgt uns auf Instagram:</strong>
+        <a class="contact-link" href="https://www.instagram.com/buehnenfreunde_todo/" target="_blank">buehnenfreunde_todo</a>
+      </div>  
+
+      <div class="contact-item">
+        <strong>Adresse:</strong>
+        <span>Theaterverein Bühnenfreunde Hemeln e.V.<br>Udo Isenberg<br>Unterdorf 18<br>34346 Hann. Münden / Hemeln</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>Telefon:</strong>
+        <a class="contact-link" href="tel:+495551234567">+49 5544 1234todo</a>
+      </div>
+
+      <div class="contact-item">
+        <strong>E‑Mail:</strong>
+        <a class="contact-link" href="mailto:buehnenfreunde@gmx.de">buehnenfreunde@gmx.de</a>
+      </div>     
+      
+      <div class="contact-item">
+        <strong>Webseite:</strong>
+        <a class="contact-link" href="https://www.buehnenfreunde-todo.de" target="_blank">https://www.buehnenfreunde-todo.de</a>
+      </div>      
+    </div>
+  </div>
+
+</div>
+
+<!-- Button zur Startseite -->
+<!--
 <div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-black w3-right w3-border top-menu-button" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
 <div class="w3-clear"></div>
 <header class="w3-center w3-margin-bottom">
-  <div class="spacer" aria-hidden="true"></div>
-  <h1><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h1>
-  <h2><b>Seit 1964 für Euch auf der Bühne</b></h2>
-  <p><b>Aktuelles: Das neue Stück für 2027 ist ausgesucht. Die Proben beginnen im Oktober.</b></p>
+  <p><a href="./index.html" class="w3-btn w3-black">Startseite</a></p>
 </header>
-</div>
-
-<!-- Photo Grid 
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:12px">
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_04.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_02.jpg" style="width:100%">
-    <img src="./photos/KonfirmationHemeln2024_05.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_03.jpg" style="width:100%">
-    <img src="./photos/KonfirmationHemeln2024_06.jpg" style="width:100%">
-  </div>
-  
-</div>
 -->
-
-
-
-<!-- End Page Content -->
-</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
@@ -99,7 +122,7 @@ footer a {color: #9fffa6}
     <span class="footer-link-sep"></span>
     <a href="./impressum.html" class="w3-hover-text-green footer-link">Impressum</a>     
     <span class="footer-link-sep"></span>
-    <a href="./rechtliches.html" class="w3-hover-text-green footer-link">Datenschutz & Haftungsausschluss</a></p>    
+    <a href="./rechtliches.html" class="w3-hover-text-green footer-link">Datenschutz & Haftungsausschluss</a></p>
 </footer>
  
 <script>
@@ -117,3 +140,4 @@ function w3_close() {
 
 </body>
 </html>
+

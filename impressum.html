@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Theaterverein Bühnenfreunde Hemeln e.V.</title>
+<title>Impressum - Theaterverein Bühnenfreunde Hemeln e.V.</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,14 +12,14 @@ body {font-family: "Montserrat", sans-serif; background-color: #000; color: #fff
 h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
-/* Footer and button contrast improvements */
+/* Design tweaks to match index.html */
 footer {background-color: rgba(0,0,0,0.85); color: #fff}
 footer a {color: #9fffa6}
+.spacer {height: 30vh; min-height: 120px}
 .top-row { position: relative; width: 100%; min-height: 60px; }
 .top-menu-button { position: absolute; top: 0; right: 0; z-index: 10;}
 .top-menu-button i {color: #fff}
-/* Spacer above main heading to position it ~30% down the viewport */
-.spacer {height: 30vh; min-height: 120px}
+@media (max-width:600px){.spacer{height:22vh}}
 /* Small footer spacing for adjacent links */
 .footer-link + .footer-link-sep {margin-left:12px}
 /* Sidebar colors */
@@ -32,8 +32,8 @@ footer a {color: #9fffa6}
 </head>
 <body>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px;right:0;left:auto;" id="mySidebar">
+<!-- Sidebar (copied from index.html) -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px;right:0;left:auto" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
@@ -45,49 +45,62 @@ footer a {color: #9fffa6}
   </div>  
   <div class="w3-bar-block w3-center">
     <a href="./impressum.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Impressum</a>
-  </div>  
+  </div>   
   <div class="w3-bar-block w3-center">
     <a href="./rechtliches.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Rechtliches</a>
   </div>  
 </nav>
 
-<!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
 <div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-black w3-right w3-border top-menu-button" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-  <div class="spacer" aria-hidden="true"></div>
-  <h1><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h1>
-  <h2><b>Seit 1964 für Euch auf der Bühne</b></h2>
-  <p><b>Aktuelles: Das neue Stück für 2027 ist ausgesucht. Die Proben beginnen im Oktober.</b></p>
-</header>
+  <span class="w3-button w3-xxlarge w3-black w3-right w3-border top-menu-button" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-clear"></div>
+  <header class="w3-center w3-margin-bottom">
+    <div class="spacer" aria-hidden="true"></div>
+  </header>
 </div>
 
-<!-- Photo Grid 
-<div class="w3-row-padding" id="myGrid" style="margin-bottom:12px">
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_04.jpg" style="width:100%">
-  </div>
+<h1>Impressum</h1>
 
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_02.jpg" style="width:100%">
-    <img src="./photos/KonfirmationHemeln2024_05.jpg" style="width:100%">
-  </div>
+<h2>Angaben gemäß § 5 DDG</h2>
+<p>Theaterverein Bühnenfreunde Hemeln e.V.<br>
+Unterdorf 18<br>
+34346 Hann. Münden - Hemeln</p>
 
-  <div class="w3-third">
-    <img src="./photos/KonfirmationHemeln2024_03.jpg" style="width:100%">
-    <img src="./photos/KonfirmationHemeln2024_06.jpg" style="width:100%">
-  </div>
-  
-</div>
--->
+<p>Vertreten durch den Vorstand:<br>
+Udo Isenberg (1. Vorsitzender)<br>
+Stefan Urhahn (2. Vorsitzender)</p>
+
+<h2>Kontakt</h2>
+<p>Telefon: +49 (0) 5544 1234 todo<br>
+E-Mail: <a class="contact-link" href="mailto:buehnenfreunde@gmx.de">buehnenfreunde@gmx.de</a><br>
+Website: <a class="contact-link" href="https://todo.github.io/buehne" target="_blank">todo.github.io/buehne</a></p>
+
+<h2>Registereintrag</h2>
+<p>Eintragung im Vereinsregister.<br>
+Registergericht: Amtsgericht Musterstadt<br>
+Registernummer: VR 98765</p>
+
+<h2>Umsatzsteuer-ID</h2>
+<p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+DE 987654321 (Falls nicht vorhanden, kann dieser Punkt komplett entfallen)</p>
+
+<h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+<p>Udo Isenberg<br>
+Unterdorf 18<br>
+34346  Münden - Hemeln</p>
+
+<h2>Technischer Ansprechpartner</h2>
+<p>Andreas Noll<br>
+Schlehenweg 7<br>
+34346 Hann. Münden - Hemeln<br>
+E-Mail: <a class="contact-link" href="mailto:buehnenfreunde@gmx.de">buehnenfreunde@gmx.de</a></p>
 
 
+<p class="w3-medium">Für das Webdesign nutzen wir <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> 
 
-<!-- End Page Content -->
 </div>
 
 <!-- Footer -->
@@ -101,7 +114,7 @@ footer a {color: #9fffa6}
     <span class="footer-link-sep"></span>
     <a href="./rechtliches.html" class="w3-hover-text-green footer-link">Datenschutz & Haftungsausschluss</a></p>    
 </footer>
- 
+
 <script>
 // Open and close sidebar
 function w3_open() {
@@ -117,3 +130,5 @@ function w3_close() {
 
 </body>
 </html>
+
+
