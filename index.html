@@ -28,6 +28,8 @@ footer a {color: #9fffa6}
 #mySidebar .w3-bar-item { color: #f5e5e5 !important; }
 #mySidebar .w3-bar-item:hover, #mySidebar .w3-bar-item:focus { background-color: #7a1010 !important; /* dunkles Rot beim Hover */ color: #ffffff !important; }
 #mySidebar .w3-button:hover, #mySidebar .w3-button:focus { background-color: #7a1010 !important; color: #ffffff !important; }
+/* Header panel style */
+.header-panel { background: #2b2b2b9d; padding: 10px; border-radius: 8px; max-width:900px; margin: 0 auto; color: #ddd }
 </style>
 </head>
 <body>
@@ -55,13 +57,15 @@ footer a {color: #9fffa6}
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
-<div class="w3-opacity">
+<div class="w3-container">
 <span class="w3-button w3-xxlarge w3-black w3-right w3-border top-menu-button" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
 <div class="w3-clear"></div>
 <header class="w3-center w3-margin-bottom">
   <div class="spacer" aria-hidden="true"></div>
-  <h1><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h1>
-  <h2><b>Seit 1964 für Euch auf der Bühne</b></h2>
+  <div class="header-panel">
+    <h1><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h1>
+    <h2><b>Seit 1964 für Euch auf der Bühne</b></h2>
+  </div>
   <p><b>Aktuelles: Das neue Stück für 2027 ist ausgesucht. Die Proben beginnen im Oktober.</b></p>
 </header>
 </div>
