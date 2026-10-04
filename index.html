@@ -12,10 +12,14 @@
 <script src="./carousel.js" defer></script>
 <style>
 .poster-carousel {max-width: 700px; margin: 32px auto 0; padding: 0 16px}
-.poster-carousel-slide {margin: 0; text-align: center}
-.poster-carousel-slide[hidden] {display: none}
+.poster-carousel-slides {display: grid}
+.poster-carousel-slide {grid-area: 1 / 1; margin: 0; text-align: center; opacity: 0; pointer-events: none; transition: opacity 400ms ease}
+.poster-carousel-slide.is-active {opacity: 1; pointer-events: auto}
 .poster-carousel-slide img {display: block; width: 100%; max-height: 70vh; object-fit: contain; margin: 0 auto}
 .poster-carousel-controls {display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 0 12px}
+@media (prefers-reduced-motion: reduce) {
+  .poster-carousel-slide {transition: none}
+}
 </style>
 </head>
 <body>
@@ -67,19 +71,19 @@
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </button>
       <div class="poster-carousel-slides">
-        <figure class="poster-carousel-slide">
+        <figure class="poster-carousel-slide is-active" aria-hidden="false">
           <img src="./images/Plakat2025.jpg" alt="Theaterplakat 2025">
         </figure>
-        <figure class="poster-carousel-slide" hidden>
+        <figure class="poster-carousel-slide" aria-hidden="true">
           <img src="./images/Plakat2024.jpg" alt="Theaterplakat 2024">
         </figure>
-        <figure class="poster-carousel-slide" hidden>
+        <figure class="poster-carousel-slide" aria-hidden="true">
           <img src="./images/Plakat2019.jpg" alt="Theaterplakat 2019">
         </figure>
-        <figure class="poster-carousel-slide" hidden>
+        <figure class="poster-carousel-slide" aria-hidden="true">
           <img src="./images/Plakat2018.jpg" alt="Theaterplakat 2018">
         </figure>
-        <figure class="poster-carousel-slide" hidden>
+        <figure class="poster-carousel-slide" aria-hidden="true">
           <img src="./images/Plakat2017.jpg" alt="Theaterplakat 2017">
         </figure>
       </div>

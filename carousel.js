@@ -8,7 +8,9 @@ if (carousel) {
   function showSlide(index) {
     currentSlide = (index + slides.length) % slides.length;
     slides.forEach((slide, slideIndex) => {
-      slide.hidden = slideIndex !== currentSlide;
+      const isActive = slideIndex === currentSlide;
+      slide.classList.toggle("is-active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
     });
   }
 
