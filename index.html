@@ -11,8 +11,8 @@
 <script src="./sidebar.js" defer></script>
 <script src="./carousel.js" defer></script>
 <style>
-.poster-carousel {max-width: 700px; margin: 32px auto 0; padding: 0 16px; background: #2b2b2b9d; border-radius: 8px}
-.poster-carousel-slide {margin: 20px; text-align: center}
+.poster-carousel {max-width: 700px; margin: 32px auto 0; padding: 0 16px}
+.poster-carousel-slide {margin: 0; text-align: center}
 .poster-carousel-slide[hidden] {display: none}
 .poster-carousel-slide img {display: block; width: 100%; max-height: 70vh; object-fit: contain; margin: 0 auto}
 .poster-carousel-controls {display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 0 12px}
@@ -53,46 +53,42 @@
 
 <!-- SPECIFIC CONTENT -->
 
-<div style="text-align: center;">
+<div class="text-panel" style="text-align: center;">
+  <h2><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h2>
+  <h3><b>Seit 1965 für Euch auf der Bühne</b></h3>
+  <p><b>Aktuelles:</b> Das neue Stück für 2027 ist ausgesucht. Die Proben haben begonnen.</p>
+  <p><b>Save the date:</b> Aufführungen am 11.-13. Juni 2027</p>
 
-  <div class="text-panel" style="text-align: center;">
-    <h2><b>Theaterverein Bühnenfreunde Hemeln e.V.</b></h2>
-    <h3><b>Seit 1965 für Euch auf der Bühne</b></h3>
-    <p><b>Aktuelles:</b> Das neue Stück für 2027 ist ausgesucht. Die Proben haben begonnen.</p>
-    <p><b>Save the date:</b> Aufführungen am 11.-13. Juni 2027</p>
-  </div>
+  <!-- Plakat-Karussell -->
+  <section class="poster-carousel w3-content" aria-label="Theaterplakate" aria-roledescription="Karussell">
 
-</div>
-
-<!-- Plakat-Karussell -->
-<section class="poster-carousel w3-content" aria-label="Theaterplakate" aria-roledescription="Karussell">
-
-  <div class="poster-carousel-controls">
-    <button class="w3-button w3-black" type="button" data-carousel-previous aria-label="Zurück">
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </button>
-    <div class="poster-carousel-slides">
-      <figure class="poster-carousel-slide">
-        <img src="./images/Plakat2025.jpg" alt="Theaterplakat 2025">
-      </figure>
-      <figure class="poster-carousel-slide" hidden>
-        <img src="./images/Plakat2024.jpg" alt="Theaterplakat 2024">
-      </figure>
-      <figure class="poster-carousel-slide" hidden>
-        <img src="./images/Plakat2019.jpg" alt="Theaterplakat 2019">
-      </figure>
-      <figure class="poster-carousel-slide" hidden>
-        <img src="./images/Plakat2018.jpg" alt="Theaterplakat 2018">
-      </figure>
-      <figure class="poster-carousel-slide" hidden>
-        <img src="./images/Plakat2017.jpg" alt="Theaterplakat 2017">
-      </figure>
+    <div class="poster-carousel-controls">
+      <button class="w3-button w3-black" type="button" data-carousel-previous aria-label="Zurück">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="poster-carousel-slides">
+        <figure class="poster-carousel-slide">
+          <img src="./images/Plakat2025.jpg" alt="Theaterplakat 2025">
+        </figure>
+        <figure class="poster-carousel-slide" hidden>
+          <img src="./images/Plakat2024.jpg" alt="Theaterplakat 2024">
+        </figure>
+        <figure class="poster-carousel-slide" hidden>
+          <img src="./images/Plakat2019.jpg" alt="Theaterplakat 2019">
+        </figure>
+        <figure class="poster-carousel-slide" hidden>
+          <img src="./images/Plakat2018.jpg" alt="Theaterplakat 2018">
+        </figure>
+        <figure class="poster-carousel-slide" hidden>
+          <img src="./images/Plakat2017.jpg" alt="Theaterplakat 2017">
+        </figure>
+      </div>
+      <button class="w3-button w3-black" type="button" data-carousel-next aria-label="Vorwärts">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </button>
     </div>
-    <button class="w3-button w3-black" type="button" data-carousel-next aria-label="Vorwärts">
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </button>
-  </div>
-</section>
+  </section>
+</div>
 
 <!-- SPECIFIC CONTENT END -->
 
