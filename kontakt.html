@@ -16,7 +16,13 @@
 .contact-item { display: grid; grid-template-columns: 190px minmax(0, 1fr); align-items: start; gap: 12px; max-width: 620px; margin: 12px auto; }
 .contact-item strong { display: block; width: 190px; text-align: left; }
 .contact-item span,
-.contact-item a { display: block; text-align: left; }
+.contact-item a { display: block; text-align: left;min-width: 0; overflow-wrap: anywhere; }
+@media (max-width:600px) {
+  .contact-wrapper {padding: 12px}
+  .contact-card {padding: 16px}
+  .contact-item {grid-template-columns: 1fr; gap: 4px}
+  .contact-item strong {width: auto}
+}
 </style>
 </head>
 <body>
@@ -62,7 +68,7 @@
     </div>  
 
     <h3><b>So erreicht Ihr uns</b></h3>
-    <p class="w3-medium">Wir freuen uns über Eurer Interesse und Eure Fragen rund um unser Vereinsleben.</p>
+    <p class="w3-medium">Wir freuen uns über Euer Interesse und Eure Fragen rund um unser Vereinsleben.</p>
 
     <div class="contact-item">
       <strong>Aufführungen:</strong>
