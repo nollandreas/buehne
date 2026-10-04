@@ -1,4 +1,4 @@
-body {font-family: "Montserrat", sans-serif; background-color: #000; color: #fff; background-image: url('./images/vorhang.jpg'); background-size: cover; background-attachment: fixed; background-position: center top; background-repeat: no-repeat; min-height: 100vh}
+body {font-family: "Montserrat", sans-serif; background-color: #000; color: #fff; background-image: url('./images/vorhang.jpg'); background-size: cover; background-attachment: fixed; background-position: center top; background-repeat: no-repeat; min-height: 100vh; hyphens: auto}
 footer {background-color: rgba(0,0,0,0.85); color: #fff}
 footer a {color: #9fffa6}
 .top-menu-button { position: absolute; top: 0; right: 0; z-index: 10;}
