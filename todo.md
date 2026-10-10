@@ -11,4 +11,4 @@
 
 ## Admin
 - andere github.io-Domain (Fork?!)
-- Webdomain/Umleitung? Kosten?
+- Webdomain/Umleitung? Kosten? (dann CNAME Datei nötig)
