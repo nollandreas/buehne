@@ -5,7 +5,6 @@
 - Geschichte-Seite (Zeitstrahl?!)
 
 ## Fixes
-- Daten Kontakt und Impressum mit Udo prüfen
 
 ## Refactoring
 - Links-Style Code vereinfachen
